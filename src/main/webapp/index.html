@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina de Inicio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel = "stylesheet" href = "styles/loginPageStyle.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "container-form">
+                <form class = "sign-up">
+                    <h2>Iniciar sesion</h2>
+                    <div class = "social-networks">
+                        <ion-icon name="logo-google"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-github"></ion-icon> 
+                    </div>
+                    <span>Ingrese su usuario y contraseña</span>
+                    <div class="container-input">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" placeholder = "Usuario">
+                    </div>
+                    <div class="container-input">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder = "Contraseña">
+                    </div>
+                    <button class = "button-login">INGRESAR AL SISTEMA</button> 
+
+                </form>
+            </div>
+            <div class = "container-user">
+                <div class ="container-transform">
+                     <h2><ion-icon name="happy-outline"></ion-icon> ¡Bienvenido!</h2>
+                    <span>Seleccione la sección que desea visualizar</span>
+                    <div class = "controllers">
+                        <button class="boton-icono">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                            Zonas Forestales
+                        </button>
+                        <button class="boton-icono">
+                            <ion-icon name="earth-outline"></ion-icon>
+                            Información de Árboles
+                        </button>
+                        <button class="boton-icono">
+                            <ion-icon name="bonfire-outline"></ion-icon>
+                            Actividades de Conversación
+                        </button>
+
+                    </div>
+                    <span>Cada árbol cuenta. Explora, aprende y sé parte del cambio.</span>
+                </div>
+            </div>
+        </div>
+        <button id="btn">Click</button>
+        <script src="js/login.js"></script>
+
+    </body>
+</html>

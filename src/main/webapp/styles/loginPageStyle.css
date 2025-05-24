@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid black;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+
+}
+.container-form{
+    border: 2px solid green;
+    width: 100%;
+    overflow: hidden;
+
+}
+.container-user{
+    border: 2px solid green;
+    width: 100%;
+    overflow: hidden;
+}
+.container-form form{
+    border: 2px solid red;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-user{
+    border: 2px solid red;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-networks{
+    font-size: 18px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.social-networks ion-icon{
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+.container-form span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.container-input{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    justify-content:center;
+    background-color: white;
+}
+.container-input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+.controllers{
+    font-size: 18px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-direction: column;
+}
+.boton-icono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+}
+.container-user span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.button-login{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    background-color: graytext;
+    color: white;
+}
+.container-user h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.container-user ion-icon{
+    font-size: 30px;
+}
+
+/*Parte de la animacion*/
+.container-transform{
+    transform: translateX(-110%);
+}
+.container.toggle .container-form{
+    transform: translateX(-100%);
+}
+.container.toggle .container-transform{
+    transform: translateX(0);
+}
+#btn {
+    position: absolute;
+    top: 10%;
+    width: 120px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
